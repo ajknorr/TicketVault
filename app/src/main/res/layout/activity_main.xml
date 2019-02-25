@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTile"
+        android:layout_width="274dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="597dp"
+        android:autoText="true"
+        android:text="Ticket Vault"
+        android:textAllCaps="false"
+        android:textAppearance="@android:style/TextAppearance.WindowTitle"
+        android:textSize="48sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/txtTickets"
+        android:layout_width="326dp"
+        android:layout_height="79dp"
+        android:ems="10"
+        android:hint="@string/txtTickets"
+        android:inputType="number"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="113dp" />
+
+    <Spinner
+        android:id="@+id/txtGroup"
+        android:layout_width="326dp"
+        android:layout_height="79dp"
+        android:entries="@array/txtGroup"
+        android:spinnerMode="dropdown"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="208dp"
+        tools:layout_width="0dp" />
+
+    <Button
+        android:id="@+id/btnCost"
+        android:layout_width="296dp"
+        android:layout_height="67dp"
+        android:text="FIND THE COST"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="304dp" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="4dp"
+        android:layout_height="21dp"
+        android:text="TextView"
+        android:textSize="22sp"
+        tools:layout_editor_absoluteX="183dp"
+        tools:layout_editor_absoluteY="409dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="276dp"
+        android:layout_height="152dp"
+        android:contentDescription="@string/description"
+        app:srcCompat="@drawable/concert"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="399dp" />
+
+</android.support.constraint.ConstraintLayout>
